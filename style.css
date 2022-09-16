@@ -1,0 +1,236 @@
+body 
+{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  background-color:black;
+}
+
+header 
+{
+    background-color:pink;
+    height: 20px;
+    text-align: right;
+    box-shadow: purple 2px 1px 5px;
+    position: sticky;
+    top: 0;
+}
+
+.nav 
+{
+  display: flex;
+  justify-content:center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background:black;
+  z-index: 10;
+}
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em)
+{
+  .nav {
+    justify-content: center;
+  }
+}
+
+.nav-list a {
+  padding: 1rem;
+  font-size: 1.6em;
+ text-decoration: none;
+  color:snow;
+  font-family: 'Creepster', serif;
+}
+
+a.middle
+{
+    position: relative;
+}
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.middle:hover:before 
+{
+  visibility: visible;
+  transform: scaleX(1);
+   color: inherit;
+  line-height: 24px;   
+  text-decoration:underline;
+}
+
+#welcome-section
+{
+    height: 100vh;
+    color: snow;
+    background-repeat: no-repeat;
+        background-position: center;
+    background-size: cover;
+background-image:url(https://image.freepik.com/free-photo/top-view-wood-office-desk-table-flat-lay-workspace_35380-2746.jpg);
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'Creepster',serif;
+}
+
+#subtitle {
+    font-size: 2.2em;
+    font-family: 'Creepster', 
+     serif;
+}
+#hello
+{
+  padding:10px;
+}
+
+h2 {
+	color: gray;
+	font-size: 6vw;
+	position: relative;
+	text-transform: uppercase;
+	-webkit-text-stroke: 0.3vw #f7f7fe;
+  padding:90px;
+}
+
+h2::before {
+	top: 32.3%;
+	left:39.7%;
+	width: 0;
+	height: 30%;
+	color: black;
+	overflow: hidden;
+	position: absolute;
+	content: attr(data-text);
+	border-right: 2px solid #37b9f1;
+	-webkit-text-stroke: 0vw #f7f7fe;
+	animation: animate 6s linear infinite;
+}
+@keyframes animate {
+	0%,
+	22% {
+		width: 0%;
+	}
+
+	70%,
+	90% {
+		width:20.5%;
+	}
+}
+
+
+.project-tile{
+display:inline-flex;
+}
+.project{
+  width:45vw;
+}
+.project-img{
+  margin:2rem 3rem 2rem 3rem;
+  border:solid purple 1px;
+  box-shadow: 2px 3px 9px 1px aqua;
+  border-radius:5px;
+}
+ a{
+  display:flex;
+  flex-direction:column;
+  text-decoration:none;
+}
+ h4{
+  font-family:'Creepster', 
+     serif;
+  margin:-2rem 3rem 5rem 3rem;
+  padding:5px;
+  text-decoration:none;
+     color:white;
+  height:7rem;
+  font-size:5vh;
+  margin:auto;
+}
+ a:hover{
+  transform:scale(1.05);
+  color:aqua;
+  transition:0.1s ease-in-out;
+}
+
+.button{
+  max-width:10vw;
+  margin:auto;
+  padding-bottom:9rem;
+}
+.button input{
+  height:2rem;
+  border-radius:5px;
+  border:solid violet 1px;
+  background:purple;
+  color:white;
+  font-size:1rem;
+  margin-top:1.5rem;
+  margin-bottom:-4rem;
+  font-family: 'Creepster', 
+     serif;
+}
+.button input:hover{
+  background:aqua;
+  color:purple;
+  cursor:pointer;
+}
+
+
+.contact-section-header
+{
+  font-family:'Creepster',serif;
+    background-image:url(https://foundershield.com/wp-content/uploads/2020/04/spoke-post.jpeg);
+  height: 60vh;
+    color: snow;
+    background-repeat: no-repeat;
+    background-position: center;
+  opacity:0.4;
+}
+p
+{
+  color:snow;
+  font-size:50px;
+}
+contact-section{
+  color:white;
+  font-size:50px;
+  padding-bottom:250px;
+   font-family:'Creepster', 
+     serif;
+}
+
+.icon{
+  color: aqua;
+  font-size: 30px;
+  height:2rem;
+  border-radius:2px;
+  margin:20px;
+}
+.icon:hover
+{
+  color:blue;
+}
+
+footer{
+  background:black;
+  color:white;
+  font-size:1.5rem;
+  display:flex;
+  justify-content:center;
+  font-family:'Creepster', 
+     serif;
+}
